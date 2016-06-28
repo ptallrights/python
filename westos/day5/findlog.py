@@ -21,7 +21,8 @@ class func(object):
 				for i in range(len(li)):
 					print li[i]
 				print "#######end######"
-
+		self.of.close()	
+		
 
 class Judge(object):
 
@@ -57,12 +58,15 @@ class Judge(object):
 
 
 if __name__ == '__main__':
-	p = Judge(sys.argv[1])
-	if p.dpath():
-		if p.fexist():
-			fn = p.filepn()
-			for i in fn:
-				f = func(i)
-				f.finds(sys.argv[2])
-		else:	
-			print "The dir is not file with '.log'"
+	if len(sys.argv) == 3:
+		p = Judge(sys.argv[1])
+		if p.dpath():
+			if p.fexist():
+				fn = p.filepn()
+				for i in fn:
+					f = func(i)
+					f.finds(sys.argv[2])
+			else:	
+				print "The dir is not file with '.log'"
+	else:
+		print "please input argv after script(filepath key)"
