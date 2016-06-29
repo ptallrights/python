@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+
 staff_dic = {}
 f = file('stu_info.txt')
 for line in f.xreadlines():

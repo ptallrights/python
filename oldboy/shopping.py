@@ -36,7 +36,6 @@ while True:
         print '\033[31;1mCould not find this item\0333[0m'
         continue
     
-    
     #print products[choice]
     pro = products[choice]
 

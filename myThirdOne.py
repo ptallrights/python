@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 
 'myFirstOne.py -- create text file'
 import os

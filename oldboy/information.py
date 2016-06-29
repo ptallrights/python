@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 
 name = raw_input("what are you name? :")
 age = raw_input("how old are you? :")

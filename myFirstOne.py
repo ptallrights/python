@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 import os
 ls = os.linesep
 
@@ -58,7 +58,6 @@ else:
 	fobk.writelines(['%s%s' % (x,ls) for x in all])
 	fobk.close()
 	print 'DONE!'
-
 
 
 #fname = raw_input('Enter filename:')

@@ -112,7 +112,6 @@ s = f + l
 print s
 print f.ccc
 
-
 #===========================
 #welecome to school system.
 #welecome to school system.

@@ -1,7 +1,6 @@
 #!/usr/bin/env python 
 #coding=utf-8
 #实现查找一个日志文件的ERROR这一行，并打印前五行
-
 import sys
 
 #f = ofen('/tmp/mylog.log','a+')

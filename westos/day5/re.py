@@ -37,5 +37,8 @@ class Heat(object):
 
 
 r = Heat()
+print r
 h = Resource()
+print h
 f = subResource()
+print f

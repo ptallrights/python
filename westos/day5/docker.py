@@ -20,5 +20,6 @@ class DockerResource(Resource):
 		print 'dosker resource test'
 
 r = DockerResource()
+print r
 print type(r)
 r.test()
