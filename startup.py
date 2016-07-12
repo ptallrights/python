@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 #python startup file
-
 import sys
 import readline
 import rlcompleter

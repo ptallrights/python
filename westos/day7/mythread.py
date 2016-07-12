@@ -23,6 +23,7 @@ def non_domain():
 	#print 'non-domian stop...'
 	logging.info('non-domain stop...')
 
+
 if __name__ == '__main__':
 
 	d = threading.Thread(target=domain,name='domian')

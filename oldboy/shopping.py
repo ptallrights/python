@@ -13,6 +13,7 @@ products = [
     ['Water',':',5]
 ]
 
+
 #create a shopping list
 shopping_list = []
 
