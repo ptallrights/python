@@ -1,0 +1,35 @@
+{%extends "base.html"%}
+#{%block title%}{%endblock%}
+{%block page_content%}
+<div class="col_md_12 graphs">
+	   <div class="xs">
+  	 <h3>Servers list</h3>
+  	<div class="bs-example4" data-example-id="contextual-table">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Hostname</th>
+          <th>IP</th>
+          <th>Position</th>
+          <th>Port</th>
+        </tr>
+      </thead>
+      <tbody>
+	{% for host in host_list%}
+        <tr class="active">
+          <th scope="row">{{host.id}}</th>
+          <td>{{host.hostname}}</td>
+          <td>{{host.postion}}</td>
+          <td>{{host.port}}</td>
+          <td><a href="/host_edit/{{host.id}}">edit</a> | <a href="/host_del/{{host.id}}">del</a></td>
+        </tr>
+	{%endfor%}
+      </tbody>
+    </table>
+   </div>
+  </div>
+  </div>
+  </div>
+   
+{%endblock%}

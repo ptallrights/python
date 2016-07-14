@@ -1,0 +1,64 @@
+{%extends "base.html"%}
+{%block title%}编辑主机{%endblock%}
+
+{%block page_content%}
+	<div class="graphs">
+	     <div class="xs">
+  	       <h3>Edit Server</h3>
+  	         <div class="tab-content">
+						<div class="tab-pane active" id="horizontal-form">
+							<form class="form-horizontal"  method="POST">
+								<div class="form-group">
+									<label for="focusedinput" class="col-sm-2 control-label">Hostname</label>
+									<div class="col-sm-8">
+										<input class="form-control1" id="focusedinput" placeholder="PLZ input hostname" type="text" name="hostname",value={{host.hostname}}>
+									</div>
+									<div class="col-sm-2">
+								
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="focusedinput" class="col-sm-2 control-label">IP</label>
+									<div class="col-sm-8">
+										<input class="form-control1" id="focusedinput" placeholder="PLZ input IP" type="text" name="ip",value={{host.ip}}>
+									</div>
+									<div class="col-sm-2">
+								
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="focusedinput" class="col-sm-2 control-label">SSH Port</label>
+									<div class="col-sm-8">
+										<input class="form-control1" id="focusedinput" placeholder="PLZ input ssh port" type="text" name="port",value={{host.port}}>
+									</div>
+									<div class="col-sm-2">
+								
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="selector1" class="col-sm-2 control-label">Postion</label>
+									<div class="col-sm-8"><select name="postion" id="selector1" class="form-control1">
+										<option {%if host.postion == 1 %} selected {%endif%} value="1">北京机房</option>
+										<option {%if host.postion == 2 %} selected {%endif%} value="2">西安高新电信机房</option>
+										<option {%if host.postion == 3 %} selected {%endif%} value="3">廊坊BGP机房</option>
+										<option {%if host.postion == 4 %} selected {%endif%} value="4">东京机房</option>
+									</select></div>
+								</div>
+								<div class="form-group">
+									<label for="txtarea1" class="col-sm-2 control-label">Description</label>
+									<div class="col-sm-8"><textarea name="description" id="txtarea1" cols="50" rows="4" class="form-control1",{{host.description}}></textarea></div>
+								</div>
+		<div class="panel-footer">
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2">
+				<input type="submit" class="btn-success btn" value="Submit" />
+				<input type="reset" class="btn-inverse btn" value="Reset" />
+			</div>
+		</div>
+	 </div>
+							</form>
+						</div>
+					</div>
+					
+
+{%endblock%}
