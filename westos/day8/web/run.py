@@ -1,10 +1,11 @@
 #!/usr/bin/env python
+
 from flask import Flask
 from flask import request
-#from flask.ext.script import Manager
+from flask.ext.script import Manager
 
 app = Flask(__name__)
-#manager = Manager(app)
+manager = Manager(app)
 
 @app.route('/')
 def index():
@@ -18,5 +19,5 @@ def show(name):
 	        return 'go away'
 
 if __name__ == '__main__':
-        app.run(host='172.25.254.21',debug=True)
-#	manager.run()
+        #app.run(host='172.25.254.21',debug=True)
+	manager.run()

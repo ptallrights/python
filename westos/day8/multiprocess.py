@@ -3,6 +3,7 @@
 import multiprocessing
 import time
 import urllib2
+
 web_sites = [
 	'http://www.baidu.com',
 	'http://www.163.com',
