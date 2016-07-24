@@ -1,0 +1,32 @@
+#!/usr/bin/env python
+# coding:utf-8
+# __author__ = 'ptallrights'
+
+"""
+@version: Python 2.7.11
+@author: ptallrights
+@license: Apache Licence 
+@file: dots.py.py
+@time: 2016/7/23 19:58
+"""
+
+import pygame,sys
+pygame.init()
+dots = [[221,432],[225,331],[133,342],[141,310],
+        [51,230],[74,217],[58,153],[114,164],
+        [123,135],[176,190],[159,77],[193,93],
+        [230,28],[267,93],[301,77],[284,190],
+        [327,135],[336,164],[402,153],[386,217],
+        [409,230],[319,310],[327,342],[233,331],
+        [237,432]]
+
+screen = pygame.display.set_mode([640,480])
+screen.fill([255,255,255])
+pygame.draw.lines(screen,[255,0,0],True,dots,2)
+pygame.display.flip()
+running = True
+while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+pygame.quit()
